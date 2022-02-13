@@ -1,0 +1,5 @@
+discord>=1.7.3
+requests>=2.26.0
+Flask>=2.0.2
+praw>=7.5.0
+prawcore>=2.3.0

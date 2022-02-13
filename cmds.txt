@@ -1,0 +1,8 @@
+#command list file
+#default prefix: !
+#read cmdlist.txt for command list, type all to include all commands
+#to add new commands just type the command name below, also make sure to add your user id and the bot client id so i can generate an invite link
+prefix: !
+userid:
+clientid:
+token:
