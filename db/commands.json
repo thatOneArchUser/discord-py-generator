@@ -574,5 +574,64 @@
         "    @commands.command()\n",
         "    async def invite(self, ctx):\n",
         "        await ctx.reply(f\"https://discord.com/api/oauth2/authorize?client_id={clientid}&permissions=8&scope=bot\")\n\n"
+    ],
+    "sum":[
+        "    @commands.command()\n",
+        "    @commands.cooldown(1, 5, commands.BucketType.user)\n",
+        "    async def sum(self, ctx, *nums:float)\n",
+        "        ans = 0\n",
+        "        arr = list()\n",
+        "        for num in nums:\n",
+        "            ans += num\n",
+        "            arr.append(str(num))\n",
+        "        var = ' + '.join(arr)\n",
+        "        await ctx.send(f'`{var}` = __{ans}__\n--end of calculation--'')\n\n"
+    ],
+    "subtract":[
+        "    @commands.command()\n",
+        "    @commands.cooldown(1, 5, commands.BucketType.user)\n",
+        "    async def subtract(self, ctx, *nums:float):\n",
+        "        nums = list(nums)\n",
+        "        arr = list()\n",
+        "        arr.append(str(nums[0]))\n",
+        "        ans = nums[0]\n",
+        "        nums.remove(nums[0])\n",
+        "        for num in nums:\n",
+        "            ans -= num\n",
+        "            arr.append(str(num))\n",
+        "        var = ' - '.join(arr)\n",
+        "        await ctx.send(f'`{var}` = __{ans}__\n--end of calculation--')\n\n"
+     ],
+     "multiply":[
+        "    @commands.command()\n",
+        "    @commands.cooldown(1, 5, commands.BucketType.user)\n",
+        "    async def multiply(self, ctx, num1: float, num2: float):\n",
+        "        ans = str(num1 * num2)\n",
+        "        await ctx.send(f'`{num1} × {num2}` = __{ans}__\n\n--end of calculation--')\n\n"
+     ],
+     "divide":[
+        "    @commands.command()\n",
+        "    @commands.cooldown(1, 5, commands.BucketType.user)\n",
+        "    async def divide(self, ctx, num1: float, num2: float):\n",
+        "        if num2 == 0:\n",
+        "            await ctx.send('math error: divided by zero.'')\n",
+        "            return\n",
+        "        ans = str(num1 / num2)\n",
+        "        await ctx.send(f'`{num1} ÷ {num2}` = __{ans}__\n\n--end of calculation--')\n\n"
+     ],
+     "power":[
+        "    @commands.command()\n",
+        "    @commands.cooldown(1, 5, commands.BucketType.user)\n",
+        "    async def power(self, ctx, num1: float, num2: int):\n",
+        "        ans = str(num1 ** num2)\n",
+        "        await ctx.send(f'`{num1} ^ {num2}` = __{ans}__\n\n--end of calculation--')\n\n"
+     ],
+     "squareroot":[
+        "    import cmath\n"
+        "    @commands.command()\n",
+        "    @commands.cooldown(1, 5, commands.BucketType.user)\n",
+        "    async def squareroot(self, ctx, num: float):\n",
+        "        ans = cmath.sqrt(num)\n",
+        "        await ctx.send(f'`√ {num}` = __{ans}__\n\n--end of calculation--')\n\n"
     ]
 }
