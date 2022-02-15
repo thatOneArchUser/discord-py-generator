@@ -15,3 +15,6 @@ if it is your first time running this script run the bot generator.py file and i
 Note: trivia command is not working
 
 If you find any other bug create an issue
+
+## credits
+math commands made by [archisha69](https://github.com/archisha69)
