@@ -33,3 +33,9 @@ guess
 isSus
 lock
 unlock
+sum
+subtract
+multiply
+divide
+power
+squareroot
