@@ -627,7 +627,6 @@
         "        await ctx.send(f'`{num1} ^ {num2}` = __{ans}__\n\n--end of calculation--')\n\n"
      ],
      "squareroot":[
-        "    import cmath\n"
         "    @commands.command()\n",
         "    @commands.cooldown(1, 5, commands.BucketType.user)\n",
         "    async def squareroot(self, ctx, num: float):\n",
