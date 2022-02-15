@@ -632,5 +632,5 @@
         "    async def squareroot(self, ctx, num: float):\n",
         "        ans = cmath.sqrt(num)\n",
         "        await ctx.send(f'`√ {num}` = __{ans}__\n\n--end of calculation--')\n\n"
-    ]
+     ]
 }
